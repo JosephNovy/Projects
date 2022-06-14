@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="menu">
+      <div class="title">
+        <h2>Our Menu</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="btn-container">
+        <button class="filter-btn" type="button" data-id="all">all</button>
+        <button class="filter-btn" type="button" data-id="lunch">lunch</button>
+        <button class="filter-btn" type="button" data-id="breakfast">
+          breackfast
+        </button>
+        <button class="filter-btn" type="button" data-id="shakes">
+          shakes
+        </button>
+      </div>
+      <div class="section-center">
+        <section class="menu-item">
+          <div class="item-info">
+            <div>
+              <button class="modal-btn">
+                <img src="${item.img}" class="photo-btn" alt="menu item" />
+              </button>
+            </div>
+            <h4>nome do item</h4>
+          </div>
+        </section>
+      </div>
+    </section>
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <button class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
