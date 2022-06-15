@@ -48,7 +48,7 @@ Gallery.prototype.openmodal = function (selectedimage, list) {
     .map(function (image) {
       return ` <img src="${
         image.src
-      }" title = "${image.title} data-id = "${image.dataset.id}" class = "${selectedimage.dataset.id === image.dataset.id ? "modal-img selected" : "modal-img"}"/>`;
+      }" title = "${image.title}" data-id = "${image.dataset.id}" class = "${selectedimage.dataset.id === image.dataset.id ? "modal-img selected" : "modal-img"}"/>`;
     })
     .join("");
   this.modal.classList.add("open");
