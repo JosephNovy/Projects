@@ -1,18 +1,14 @@
+import { getelement } from "./utils/getelement.js";
 const url = "https://randomuser.me/api/";
-/*const img = document.querySelector(".user-img");
-const title = document.querySelector(".user-title");
-const value = document.querySelector(".user-value");
-const valueslist = document.querySelector(".values-list");
-const btnicon = document.querySelectorAll(".icon");
-const btn = document.querySelector(".btn");*/
 
 //GET ELEMENT FUNTION
-const getelement = (selection) => {
+/*const getelement = (selection) => {
   const element = document.querySelector(selection);
   if (element) return element;
   throw new Error("no element selected");
-};
+};*/
 //---------------------------
+
 //GETING ELEMENTS
 const img = getelement(".user-img");
 const title = getelement(".user-title");
