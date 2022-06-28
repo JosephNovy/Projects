@@ -124,67 +124,32 @@ ul {
 }
 /*
 =============== 
-Products 
+Jokes
 ===============
 */
-.products {
-  padding: 5rem 0;
+.container {
+  width: 90vw;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 5rem;
 }
-.filters-container h5 {
-  font-weight: 500;
-  margin: 1.5rem 0 0.5rem;
-  font-size: 0.85rem;
-}
-
-.search-input {
-  padding: 0.5rem;
-  background: var(--grey-200);
-  border-radius: var(--borderRadius);
-  border-color: transparent;
-  letter-spacing: var(--letterSpacing);
-}
-
-.company-btn {
+.btn {
   display: block;
   margin: 0.25em 0;
   padding: 0.25rem;
   text-transform: capitalize;
-  background: transparent;
+  background: var(--grey-300);
   border-color: transparent;
   letter-spacing: var(--letterSpacing);
   color: var(--grey-500);
   cursor: pointer;
+  border-radius: 5px;
   transition: var(--transition);
   font-size: 0.85rem;
 }
-.company-btn:hover {
+.btn:hover {
   color: var(--grey-700);
 }
-.product {
-  margin-bottom: 1rem;
-}
-.product-img {
-  border-radius: var(--borderRadius);
-  height: 15rem;
-}
-.product footer {
-  padding: 0.75rem 0;
-  text-align: center;
-}
-.product-name {
-  margin-bottom: 0.25rem;
-  text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
-  color: var(--grey-500);
-}
-.product-price {
-  margin-bottom: 0;
-  color: var(--grey-700);
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: var(--letterSpacing);
-}
-
 @media screen and (min-width: 768px) {
   .products {
     grid-template-columns: 200px 1fr;
